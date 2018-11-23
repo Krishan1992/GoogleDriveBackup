@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -29,4 +33,7 @@ dependencies {
     //Butter knife
     implementation "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+    /*For google drive backup restore*/
+    implementation "com.google.android.gms:play-services-drive:$rootProject.playServicesVersion"
+    implementation "com.google.android.gms:play-services-auth:$rootProject.playServicesVersion"
 }
