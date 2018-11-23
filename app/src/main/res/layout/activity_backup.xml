@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BackupActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:id="@+id/tvBackupRestore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/backup_restore"
+        app:layout_constraintTop_toBottomOf="@+id/appbarlayout"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvWithGoogleDrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/backing_up_all"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvBackupRestore" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btBackup"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="@string/backup"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWithGoogleDrive" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btRestore"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="@string/restore"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/btBackup"
+        app:layout_constraintTop_toBottomOf="@+id/tvWithGoogleDrive"
+         />
+
+    <TextView
+        android:id="@+id/tvGoogleDrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/google_drvice_settings"
+        app:layout_constraintTop_toBottomOf="@+id/btBackup"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvAuthenticateWith"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/backing_up_all"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvGoogleDrive" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btBackupd"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="@string/authenticate"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuthenticateWith" />
+
+</android.support.constraint.ConstraintLayout>

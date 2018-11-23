@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GDriveBackup</string>
+    <string name="backup">Backup</string>
+    <string name="delete_db">Remove Data</string>
+    <string name="msg_fullname">Enter Full name</string>
+    <string name="msg_email">Enter Email id</string>
+    <string name="msg_phone">Enter Mobile No.</string>
+
+    <!--Backup-->
+    <string name="backup_restore">Backup &amp; Restore</string>
+    <string name="restore">Restore</string>
+    <string name="backing_up_all">With Google Drive, you can synchronize and restore your channels between multiple devices.</string>
+    <string name="google_drvice_settings">Google Drive</string>
+    <string name="authenticate_with_your">Authenticate with your Google account in order to create backups in your Google Drive.</string>
+    <string name="authenticate">Connect Google Drive</string>
+    <string name="account">Account</string>
+    <string name="backupe_saved">Backup successfully saved.</string>
+</resources>
